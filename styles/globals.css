@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium px-4 py-2 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-700 font-medium px-4 py-2 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-200 p-6;
+  }
+  
+  .signal-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .signal-강한매수 {
+    @apply bg-success-50 text-success-600 border border-success-200;
+  }
+  
+  .signal-매수 {
+    @apply bg-success-50 text-success-600 border border-success-200;
+  }
+  
+  .signal-관심 {
+    @apply bg-warning-50 text-warning-600 border border-warning-200;
+  }
+  
+  .signal-관망 {
+    @apply bg-gray-50 text-gray-600 border border-gray-200;
+  }
+  
+  .signal-주의 {
+    @apply bg-danger-50 text-danger-600 border border-danger-200;
+  }
+  
+  .signal-위험 {
+    @apply bg-danger-50 text-danger-600 border border-danger-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+  }
+  
+  .animate-count-up {
+    animation: countUp 2s ease-out;
+  }
+  
+  @keyframes countUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+}
