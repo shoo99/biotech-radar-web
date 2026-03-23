@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { TrendingUpIcon, TrendingDownIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, ArrowTrendingDownIcon } from '@heroicons/react/24/outline'
 import axios from 'axios'
 
 interface Stock {
@@ -123,9 +123,9 @@ export default function StockList() {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 {stock.change_percent >= 0 ? (
-                  <TrendingUpIcon className="w-5 h-5 text-green-500" />
+                  <ArrowTrendingUpIcon className="w-5 h-5 text-green-500" />
                 ) : (
-                  <TrendingDownIcon className="w-5 h-5 text-red-500" />
+                  <ArrowTrendingDownIcon className="w-5 h-5 text-red-500" />
                 )}
                 <div>
                   <div className="font-medium text-gray-900">{stock.name}</div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ChartBarIcon, TrendingUpIcon, TrendingDownIcon, ClockIcon } from '@heroicons/react/24/outline'
+import { ChartBarIcon, ArrowTrendingUpIcon, ArrowTrendingDownIcon, ClockIcon } from '@heroicons/react/24/outline'
 import axios from 'axios'
 
 interface MarketData {
@@ -86,7 +86,7 @@ export default function MarketSummary() {
       <div className="card hover:shadow-lg transition-shadow duration-300">
         <div className="flex items-center justify-between mb-4">
           <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-            <TrendingUpIcon className="w-5 h-5 text-green-600" />
+            <ArrowTrendingUpIcon className="w-5 h-5 text-green-600" />
           </div>
           <span className="text-xs text-green-600 font-medium">+{risingPercentage}%</span>
         </div>
@@ -102,7 +102,7 @@ export default function MarketSummary() {
       <div className="card hover:shadow-lg transition-shadow duration-300">
         <div className="flex items-center justify-between mb-4">
           <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
-            <TrendingDownIcon className="w-5 h-5 text-red-600" />
+            <ArrowTrendingDownIcon className="w-5 h-5 text-red-600" />
           </div>
           <span className="text-xs text-red-600 font-medium">-{fallingPercentage}%</span>
         </div>

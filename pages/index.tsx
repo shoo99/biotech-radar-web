@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import { TrendingUpIcon, BellIcon, ChartBarIcon, ShieldCheckIcon } from '@heroicons/react/24/outline'
+import { ArrowTrendingUpIcon, BellIcon, ChartBarIcon, ShieldCheckIcon } from '@heroicons/react/24/outline'
 import StockList from '../components/StockList'
 import MarketSummary from '../components/MarketSummary'
 import PricingSection from '../components/PricingSection'
@@ -29,7 +29,7 @@ export default function Home() {
               <div className="flex items-center">
                 <div className="flex-shrink-0 flex items-center">
                   <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-green-600 rounded-lg flex items-center justify-center">
-                    <TrendingUpIcon className="w-6 h-6 text-white" />
+                    <ArrowTrendingUpIcon className="w-6 h-6 text-white" />
                   </div>
                   <span className="ml-3 text-xl font-bold text-gradient">바이오 투자 레이더</span>
                 </div>
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="card text-center hover:shadow-lg transition-shadow duration-300">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <TrendingUpIcon className="w-6 h-6 text-blue-600" />
+                  <ArrowTrendingUpIcon className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">실시간 AI 분석</h3>
                 <p className="text-gray-600 text-sm">
@@ -186,7 +186,7 @@ export default function Home() {
               <div className="col-span-1 md:col-span-2">
                 <div className="flex items-center mb-4">
                   <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-green-600 rounded-lg flex items-center justify-center">
-                    <TrendingUpIcon className="w-5 h-5 text-white" />
+                    <ArrowTrendingUpIcon className="w-5 h-5 text-white" />
                   </div>
                   <span className="ml-2 text-lg font-bold">바이오 투자 레이더</span>
                 </div>
